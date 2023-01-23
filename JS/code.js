@@ -29,7 +29,7 @@ const printList = (datos) => {
                 imageElement.src = characterData.image;
 
                 //Agregar su enlace
-                anchorElement.href = `/personaje?id=${characterData.id}`;
+                anchorElement.href = `/?id=${characterData.id}`;
                 //Agregarlo al DOM
                 cardsContainer.appendChild(cardElement);
             }
