@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.detailsPage{
+    background-color: #8EC5FC;
+    background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+
+    .toolbar{
+        display: flex;
+        padding: 0.3rem 0;
+
+        h1{
+            width: 100%;
+            text-align: center;
+        }
+
+        .goBackBtn{
+            padding: 0 1rem;
+            align-items: center;
+            align-content: center;
+            text-decoration: none;
+
+            img{
+                width: 30px;
+            }
+
+            &:hover{
+                cursor: pointer;
+            }
+        }
+    }
+
+    .character{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .character__photo, .character__name{
+            margin: 1rem;
+        }
+
+    }
+}

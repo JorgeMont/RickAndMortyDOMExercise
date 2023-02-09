@@ -1,36 +1,36 @@
 const apiUrl = 'https://rickandmortyapi.com/api/character';
 
-//Creando elementos
+//Assigns the container element to a constant
 const cardsContainer = document.querySelector('#cardsContainer');
 
 let algo;
 
 const printList = (datos) => {
-    //funcionalidad
+    //functionality
     console.log(datos);
     datos.forEach(
             (characterData) => {
-                //Crear un elemento
+                //Create the elements needed
                 // const prueba = document.createElement('p');
                 const cardElement = document.createElement('article');
                 const imageElement = document.createElement('img');
                 const nameLabel = document.createElement('h1');
                 const anchorElement = document.createElement('a');
 
-                //Ordenando el elemento
+                //Ordering the element
                 cardElement.appendChild(anchorElement);
                 anchorElement.appendChild(nameLabel);
                 anchorElement.appendChild(imageElement);
 
-                //Agregar clases
+                //Add class styles
                 cardElement.classList.add('characterCard');
 
                 nameLabel.textContent = characterData.name;
                 imageElement.src = characterData.image;
 
-                //Agregar su enlace
-                anchorElement.href = `/?id=${characterData.id}`;
-                //Agregarlo al DOM
+                //Adds href to respective character
+                anchorElement.href = `./character.html?id=${characterData.id}`;
+                //Add to DOM
                 cardsContainer.appendChild(cardElement);
             }
         );

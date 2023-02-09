@@ -1,0 +1,37 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.detailsPage {
+  background-color: #8EC5FC;
+  background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+}
+.detailsPage .toolbar {
+  display: flex;
+  padding: 0.3rem 0;
+}
+.detailsPage .toolbar h1 {
+  width: 100%;
+  text-align: center;
+}
+.detailsPage .toolbar .goBackBtn {
+  padding: 0 1rem;
+  align-items: center;
+  align-content: center;
+  text-decoration: none;
+}
+.detailsPage .toolbar .goBackBtn img {
+  width: 30px;
+}
+.detailsPage .toolbar .goBackBtn:hover {
+  cursor: pointer;
+}
+.detailsPage .character {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.detailsPage .character .character__photo, .detailsPage .character .character__name {
+  margin: 1rem;
+}/*# sourceMappingURL=character.css.map */
